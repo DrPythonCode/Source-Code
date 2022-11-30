@@ -1,0 +1,31 @@
+import os
+
+def menu():
+    print("1.Shutdown, 2.Restart, 3.Quit")
+    entry = input("Enter an option: ")
+    if entry == "1":
+        shutdown()
+    elif entry == "2":
+        restart()
+    elif entry == "3":
+        quit_program()
+    else:
+        print("Invalid entry")
+
+def shutdown():
+    print("Shutting down.. ")
+    os.system("shutdown -s")
+
+def restart():
+    print("Restarting..")
+    os.system("restart -r")
+
+def quit_program():
+    print("Bye")
+    quit()
+
+menu()
+    
+
+    
+          
