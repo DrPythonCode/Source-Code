@@ -1,0 +1,12 @@
+countries = ("spain","italy","germany","india")
+
+def search_countries():
+    entry = input("Search Tuple: ")
+    if entry in countries:
+        print("Country found")
+    else:
+        print("Country not found\n")
+        print("Search again!")
+        search_countries()
+
+search_countries()
