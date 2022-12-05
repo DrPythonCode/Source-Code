@@ -1,0 +1,10 @@
+import os
+
+def remove_files():
+    path = (r"C:\Users\mark\Desktop\remove\x.txt")
+    if os.path.exists(path):
+        os.remove(path)
+    else:
+        print("Error file not found")
+
+remove_files()
