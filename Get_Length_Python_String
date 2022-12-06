@@ -1,0 +1,19 @@
+long_string = []
+short_string = []
+
+def string_input():
+    str_input = input(">>> ")
+    if len(str_input)>= 5:
+        print("Long string")
+        long_string.append(str_input)
+        print("Long string: ", long_string)
+    else:
+        print("Short string")
+        short_string.append(str_input)
+        print("Short String: ", short_string)
+
+string_input()
+        
+
+
+
