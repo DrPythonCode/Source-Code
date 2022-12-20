@@ -1,0 +1,16 @@
+names = {"dave","joe","phil"}
+
+def remove_names():
+    name = input("Enter name to remove: ")
+    if name in names:
+        names.remove(name)
+        print("Name has been removed")
+        print(names)
+        remove_names()
+    elif (len(names)<= 0):
+        print("Set is empty")
+    else:
+        print("Name not found")
+        remove_names()
+
+remove_names()
