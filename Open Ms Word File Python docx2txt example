@@ -1,0 +1,11 @@
+import docx2txt
+import os
+
+def open_doc():
+    path = "C:\\Users\\mark\\Documents"
+    list_dir = os.chdir(path)
+    print(path)
+    my_text = docx2txt.process("z.docx")
+    print(my_text)
+
+open_doc()
