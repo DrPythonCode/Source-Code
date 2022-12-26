@@ -1,0 +1,22 @@
+dict1 = {"dave": 56, "pete": 34, "joe": 12}
+
+def search_dict1():
+    key = input("Enter a name: ")
+    if key in dict1:
+        print("Name found", dict1[key])
+    else:
+        print("Name not found")
+
+def add_new_entry():
+    key = input("Enter key: ")
+    value = input("Enter value ")
+    dict1[key]= value
+    print(dict1)
+    entry = input("Add another Y or N? ")
+    if entry.lower()== "y":
+        add_new_entry()
+    else:
+        search_dict1()
+        
+search_dict1()
+add_new_entry()
