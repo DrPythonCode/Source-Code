@@ -1,0 +1,10 @@
+import re
+
+story = "a very short story about regex"
+
+def search_string():
+    entry = input("What are you searching for? ")
+    matches = re.findall(entry,story)
+    print("Match found: ", matches)
+
+search_string()
